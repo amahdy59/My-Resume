@@ -1,0 +1,348 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* For wide screens 💻💻💻💻
+----
+----*/
+@media screen and (min-width:600px) {
+
+  /** My code **/
+  
+  .body {
+      min-height: 100%vh;
+      text-rendering: optimizeSpeed;
+      line-height: 1.5;
+      font-size:18px;
+      font-family: Bahnschrift;
+    
+    display:flex;
+    flex-direction:column;
+    padding:3.5rem;
+  /* justify-content:center; */
+  /* align-items: center; */
+  margin:0 auto;
+  width:100vw;
+  gap:3rem;
+  max-width:1000px;
+  min-width:350px;
+
+  }
+  .ahmed-mahdy {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  }
+   h2 {
+    margin-bottom:1rem;
+   }
+  .contact-details {
+    /** Styling Contact Information Group **/
+  
+    display:flex;
+    flex-direction:row;
+    gap:2rem;
+    justify-content:space-around;
+    align-items: center;
+    /** Styling Contact Items **/
+    & .info {
+      display:flex;
+      flex-direction: row;
+  /** Styling Icons **/
+      & .icon {
+        margin-right:.5rem;
+      }
+    }
+  }
+  
+  figure {
+    /* overflow:hidden; */
+    clip-path: circle();
+    width:12rem;
+  
+  }
+  
+  .profile-image {
+      /* width:20%; */
+      /* clip-path: circle(); */
+      /* object-fit:cover; */
+    
+      transform: scale(1.5);
+      position:relative;
+      top:4.1rem;
+      left:-.5rem;
+  
+      /* margin:0 auto; */
+  }
+  
+  
+  /** Summary Section Styling **/
+  
+  .section {
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+  }
+  
+  .summary-section {
+    display:flex;
+    gap:0;
+  }
+  
+  .competencies-list {
+    margin-top:0;
+  }
+  
+  .company {
+    display:flex;
+    gap:.5rem;
+    align-items: center;
+  }
+  
+  .company-icon {
+  width:2rem;
+  
+  }
+  
+  .certificates {
+  display:flex;
+  /* gap:20rem;   */
+  }
+  
+  
+  /** Images **/
+  .section-img {
+    width:5rem;
+  }
+  
+  .section-header {
+   
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  /** Separator **/
+  .separator {
+    border-top:.1rem solid grey;
+  }
+
+  .skills-text {
+    text-align:center;
+  }
+  
+/* For Tablet 
+------
+--
+--
+💊💊💊💊💊💊💊💊💊💊💊💊💊
+💊💊💊💊💊💊💊💊💊💊💊💊💊
+💊💊💊💊💊💊💊💊💊💊💊💊💊
+💊💊💊💊💊💊💊💊💊💊💊💊💊
+--
+--
+
+----*/
+
+@media screen and (max-width:600px) {
+
+  /** My code **/
+  
+  .body {
+   
+      min-height: 100vh;
+      text-rendering: optimizeSpeed;
+      line-height: 1.5;
+      font-size:18px;
+      font-family: Bahnschrift;
+    
+    /* max-width:300px; */
+    display:flex;
+    flex-direction:column;
+    padding:3.5rem;
+  /* justify-content:center; */
+  /* align-items: center; */
+  margin:0 auto;
+  width:100vw;
+  gap:3rem;
+  max-width:1000px;
+  min-width:350px;
+  
+  
+  }
+  
+  .ahmed-mahdy {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-details {
+    /** Styling Contact Information Group **/
+  
+    display:flex;
+    flex-direction:column;
+    gap:.2rem;
+    justify-content: center;
+    /** Styling Contact Items **/
+    & .info {
+      display:flex;
+      flex-direction: row;
+  /** Styling Icons **/
+      & .icon {
+        margin-right:.5rem;
+      }
+    }
+  }
+  
+  figure {
+    /* overflow:hidden; */
+    clip-path: circle();
+    width:10rem;
+  
+  }
+  
+  .profile-image {
+      /* width:20%; */
+      /* clip-path: circle(); */
+      /* object-fit:cover; */
+    
+      transform: scale(1.5);
+      position:relative;
+      top:3rem;
+      left:-.5rem;
+  
+      /* margin:0 auto; */
+  }
+  
+  
+  /** Summary Section Styling **/
+  
+  .section {
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+  }
+  
+  .summary-section {
+    display:flex;
+    gap:0;
+  }
+  
+  .competencies-list {
+    margin-top:0;
+  }
+  
+  .company {
+    display:flex;
+    gap:.5rem;
+    align-items: center;
+  }
+  
+  .company-icon {
+  width:2rem;
+  
+  }
+  
+  .certificates {
+  display:flex;
+  /* gap:20rem;   */
+  }
+  
+  
+  /** Images **/
+  .section-img {
+    width:5rem;
+  }
+  
+  .section-header {
+   
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  /** Separator **/
+  .separator {
+    border-top:.1rem solid grey;
+  }
+
+  .skills-text {
+    text-align:center;
+  }
+  }
+
+
+  /* For Mobile ------
+-----📱📱📱📱📱📱📱📱📱📱📱📱--------*/
+@media screen and (max-width:450px) {
+
+  /** My code **/
+  
+  .body {
+    font-size:16px;
+
+  gap:2rem;
+  width:100vw;
+  max-width:1000px;
+  min-width:350px;
+  
+  }
+  
+  .contact-details {
+    /** Styling Contact Information Group **/
+  
+    gap:.2rem;
+    
+  
+  }
+  
+  }
